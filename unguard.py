@@ -15,6 +15,9 @@ if os.name == 'nt':
 else:
     COPY_CMD = 'cp {src} {dst}'
 
+def move_rename(src: str, dst: str):
+    pass
+
 def fmt_path(path: str):
     if os.name == 'nt':
         return path.replace('/', '\\')
@@ -43,7 +46,7 @@ with open(maps_file, 'r') as mapfile:
 
         current_class = line.split('-> ')[1].split(':')[0]
         current_class_name = line.split(' ->')[0]
-        os.rename(fmt_path(f'./decompiled/src/{current_class}.java'), f'{current_class_name}.java')
+        move_rename(fmt_path(f'{current_class}.java'), f'{current_class_name}.java')
         map = {}
         while line.startswith('    '):
                 
