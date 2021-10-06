@@ -1,2 +1,7 @@
+.gitignore
+
 tests
 tests/*
+
+decompiled
+decompiled/*
